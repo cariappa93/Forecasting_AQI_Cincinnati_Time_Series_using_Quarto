@@ -20,4 +20,17 @@
 
 Note: We can use auto.arima() or the automated ARIMA function from fable to find the “best” model.
 
+### Part-III : Fitting Facebook Prophet Model
+**Section 1:** is fitting and assessing a Facebook Prophet model to the time series.
+
+**Section 2:** Decompose and visualize the elements of the time-series (trend, seasonality, etc.) as identified by the initial model. Examine the changepoints identified for the “trend” part of the time series. Do these detected changepoints make sense for your time-series? If not, adjust the hyperparameters of the model by specifying more or fewer changepoints (n_changepoints), or by changing the proportion of the time-series through which changepoints can be identified (changepoint_range), or the prior scale (changepoint_prior_scale). Also assess whether a linear or logistic trend makes sense for your time-series and whether the model should take into account a saturating minimum/maximum point - if so, specify a floor and cap.
+
+**Section 3:** Checking is any seasonality is identified by the model (daily, weekly, yearly, etc.). Does the time series seem to contain additive or multiplicative seasonality? If appropriate, and while examining daily data, assessing whether holidays should be included in the model.
+
+**Section 4:** Conduct a rolling window cross-validation to assess performance of the model at meaningful thresholds depending on the data. Finally, creating a 6 period forecast using the best fit Prophet model.
+
+
+References:
+1. Spring'23 - BANA 7050: Time Series Forecasting by Dr.Antony, Alex
+2. Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3.
 
