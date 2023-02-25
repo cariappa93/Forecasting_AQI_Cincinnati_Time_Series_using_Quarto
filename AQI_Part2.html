@@ -2706,7 +2706,7 @@ vertical-align: -.125em;
 <section id="checking-for-stationarity-using-rolling-calculations-and-statistical-tests" class="level5">
 <h5 class="anchored" data-anchor-id="checking-for-stationarity-using-rolling-calculations-and-statistical-tests">Checking for stationarity using rolling calculations and statistical tests</h5>
 <ol type="1">
-<li>We do not observe variance stationarity and therefore dont need to transform our time-series using log/ Box-Cox transformation.</li>
+<li>We observe variance stationarity and therefore dont need to transform our time-series using log/ Box-Cox transformation</li>
 </ol>
 <div class="cell">
 <details>
@@ -2743,7 +2743,7 @@ vertical-align: -.125em;
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>AQIdata2 <span class="ot">&lt;-</span> AQIdata2 <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">value_sdiff =</span> value <span class="sc">-</span> <span class="fu">lag</span>(value,<span class="at">n =</span> <span class="dv">12</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>3(i). We do not observe mean stationarity and therefore don’t need to take first lag difference</p>
+<p>3(i). We observe mean stationarity and therefore don’t need to take first lag difference</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -3274,7 +3274,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb22-67"><a href="#cb22-67" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-68"><a href="#cb22-68" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Checking for stationarity using rolling calculations and statistical tests</span></span>
 <span id="cb22-69"><a href="#cb22-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-70"><a href="#cb22-70" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>We do not observe variance stationarity and therefore dont need to transform our time-series using log/ Box-Cox transformation.</span>
+<span id="cb22-70"><a href="#cb22-70" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>We observe variance stationarity and therefore dont need to transform our time-series using log/ Box-Cox transformation</span>
 <span id="cb22-71"><a href="#cb22-71" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-72"><a href="#cb22-72" aria-hidden="true" tabindex="-1"></a><span class="in">```{r,warning=FALSE}</span></span>
 <span id="cb22-73"><a href="#cb22-73" aria-hidden="true" tabindex="-1"></a></span>
@@ -3304,7 +3304,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb22-99"><a href="#cb22-99" aria-hidden="true" tabindex="-1"></a>AQIdata2 <span class="ot">&lt;-</span> AQIdata2 <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">value_sdiff =</span> value <span class="sc">-</span> <span class="fu">lag</span>(value,<span class="at">n =</span> <span class="dv">12</span>))</span>
 <span id="cb22-100"><a href="#cb22-100" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb22-101"><a href="#cb22-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-102"><a href="#cb22-102" aria-hidden="true" tabindex="-1"></a>3(i). We do not observe mean stationarity and therefore don&#39;t need to take first lag difference</span>
+<span id="cb22-102"><a href="#cb22-102" aria-hidden="true" tabindex="-1"></a>3(i). We observe mean stationarity and therefore don&#39;t need to take first lag difference</span>
 <span id="cb22-103"><a href="#cb22-103" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-104"><a href="#cb22-104" aria-hidden="true" tabindex="-1"></a><span class="in">```{r,warning=FALSE}</span></span>
 <span id="cb22-105"><a href="#cb22-105" aria-hidden="true" tabindex="-1"></a>AQIdata2_roll <span class="ot">&lt;-</span> AQIdata2 <span class="sc">%&gt;%</span></span>
